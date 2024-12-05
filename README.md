@@ -1,5 +1,5 @@
 ## Emissions du Dioxyde de carbone de 1990-2020
-
+uploading https://github.com/dona-eric/Emissions-du-Dioxyde-de-carbone-CO2/blob/main/PredictCO2/project_dev_co2/pages/trendapp.png
 
 # A- ** First Step **
 Ce projet consiste à analyser les données sur l'émissions de C02 récueillies par les appareils satelitaires et les capteurs de surveillance pour prédire les émissions en Co2 en Afrique et sur le reste du continent.
