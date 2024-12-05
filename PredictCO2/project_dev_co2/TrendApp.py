@@ -121,7 +121,7 @@ if menu == "Accueil":
     - Visualiser les données de CO2 émises entre 1990 et 2020.
     - Explorer différentes visualisations interactives.
     """)
-    st.image("pages/media.png", caption="TrendApp", use_container_width=True)
+    st.image("pages/trendapp.png", caption="TrendApp", use_container_width=True)
 
 elif menu == "Visualiser":
     st.title("Visualisez vos données facilement")
