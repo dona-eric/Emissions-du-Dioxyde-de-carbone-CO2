@@ -4,8 +4,12 @@ import pandas as pd
 import requests, os, pathlib
 
 
-model = joblib.load('/home/dona-erick/Projet CO2/PredictCO2/Data_energy_Trend/models/model_best.pkl')
-pipeline_data = joblib.load('/home/dona-erick/Projet CO2/PredictCO2/Data_energy_Trend/models/pipeline.pkl')
+model = joblib.load('/home/dona-erick/Projet CO2/PredictCO2/Data_energy_Trend/Analyse/model_best.pkl')
+pipeline_data = joblib.load('/home/dona-erick/Projet CO2/PredictCO2/Data_energy_Trend/Analyse/pipeline.pkl')
+
+if model:
+    print("Validé")
+    
 main = FastAPI()
 
 
