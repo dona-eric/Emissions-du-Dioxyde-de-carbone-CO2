@@ -1,4 +1,4 @@
-## Emissions du Dioxyde de carbone de 1990-2020
+##  Projet 1 : Emissions du Dioxyde de carbone de 1990-2020
 
 ![image](https://github.com/user-attachments/assets/d85a7599-9d03-4add-a951-f8b2f07b7096)
 
@@ -30,3 +30,36 @@ fichier .py (TrendApp.py )
 # * Technologies:
     ** streamlit
     ** plotly
+
+
+## Projet 2: Energy Data collect 1990-2020
+
+### A- First Step
+
+### B- Second Step 
+
+  * Mettre en place une API qui faire la requete des données et renvoie via une interface streamlit le résultat de la prediction.
+  
+  * Je vous explique ***
+  Après analyse des données et la modélisations, un pipeline de transformation des données a été construit afin d'appliquer les traitements possibles sur les données ; Un modèle robuste bien plus meilleur que les modèles classiques de LinearRegression ou Ridge de régularisation. 
+  Avec une validation croisée et comparaison approfondit le modèle performant pour resister meme aux outliers (valeurs aberrantes) est un modèle de choix : HubRegressor.
+
+  * Avec la création d'une api à l'aide FastAPI, on fait passer les données via une interface construite à l'aide de streamlit. Ehh pfff la magie est opérée.
+
+### Technologies utilisées :
+    * FastAPI
+    * Streamlit
+    * SCikit-learn
+    * Pandas
+    * Numpy, Plotly, Seaborn
+    * DataViz
+    * Dtale
+
+### How can use it ?
+You can clone the repository with the link [Repo cloning: ](https://github.com/dona-eric/Emissions-du-Dioxyde-de-carbone-CO2)
+
+Launch the server FastAPI with : uvicorn main:app --reload
+Visit the url in local host : http://127.0.0.1:8000/predict
+
+Launch the server of Streamlit with : streamlit run data_app.py
+visit the url in Local URL: http://localhost:8501 
