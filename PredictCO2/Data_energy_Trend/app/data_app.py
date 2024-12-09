@@ -47,14 +47,17 @@ elif menu =='Prediction':
         
         try:
             # appel à l'api
-            response = requests.post(url=url_api, json=data)
+            response = requests.post(url='http://127.0.0.1:8000/predict', json=data)
             if response.status_code==200:
-                prediction = response.json()['predictions']
-                st.success(f'Prediction :{prediction}')
+                prediction = response.json().get('predictions')
+                st.success(f'Prédiction des émissions de CO2: {prediction[0]:.2f} Mt')
             else:
-                st.write("Erreur ! veuillez ressayer")
+                st.error(f"Erreur de l'API: {response.status_code}")
+                st.write("Veuillez vérifier vos données et réessayer.")
         except Exception as e:
-            st.error(f"Erreur lors de la requetes vers l'api {str(e)}")
+            st.error(f"Erreur lors de la connexion à l'API: {str(e)}")
+            st.info("Vérifiez que le serveur API est bien en cours d'exécution sur le port 8000.")
+
             
             
             

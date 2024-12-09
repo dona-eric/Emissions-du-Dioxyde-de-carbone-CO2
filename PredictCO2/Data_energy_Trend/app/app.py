@@ -24,7 +24,7 @@ def predict(data: dict):
         
         predictions = model.predict(transformed_data)
         
-        return {"predictions:", predictions.tolist()}
+        return {"predictions": predictions.tolist()}
     except Exception as e:
         return HTTPException(status_code=404, detail = {str(e)})
         
