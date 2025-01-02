@@ -62,4 +62,10 @@ Launch the server FastAPI with : uvicorn main:app --reload
 Visit the url in local host : http://127.0.0.1:8000/predict
 
 Launch the server of Streamlit with : streamlit run data_app.py
-visit the url in Local URL: http://localhost:8501 
+visit the url in Local URL: http://localhost:8501
+
+*** You can run the scripts python to get the results. The ideas inspired to the course of microsoft learn where i get the certificate professionnel for entraining and get the solutions to deploy the model machine learning on Azure Machine Learning. Thanks Microsoft !
+
+*** For anyone collaborations, you can write me or send-me the email if you visite my profil .
+## Author :
+Eric D. KOULODJI , Data Scientist Junior, Physics Theorics, IA Enthusiast.
